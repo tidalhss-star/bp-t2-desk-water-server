@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[서울 정수기 관리 주기]]></title>
+  <title><![CDATA[정보 블로그]]></title>
   <link>https://desk.water-server.store</link>
-  <description><![CDATA[서울 정보 블로그 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Mon, 27 Jul 2026 12:41:13 GMT</pubDate>
-  <lastBuildDate>Mon, 27 Jul 2026 12:41:13 GMT</lastBuildDate>
+  <description><![CDATA[정보 블로그 - 정수기 관리 주기 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Fri, 07 Aug 2026 15:16:15 GMT</pubDate>
+  <lastBuildDate>Fri, 07 Aug 2026 15:16:15 GMT</lastBuildDate>
   <atom:link href="https://desk.water-server.store/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[서울 정수기 관리 주기 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://desk.water-server.store/</link>
-      <guid isPermaLink="true">https://desk.water-server.store/</guid>
-      <description><![CDATA[서울 정보 블로그 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Mon, 27 Jul 2026 12:41:13 GMT</pubDate>
+      <title><![CDATA[홍대 바닥에서 권리금 2억의 실체와 정수기 필터의 상관관계]]></title>
+      <link>https://desk.water-server.store/posts/field_note-005-1djdu2y.html</link>
+      <guid isPermaLink="true">https://desk.water-server.store/posts/field_note-005-1djdu2y.html</guid>
+      <description><![CDATA[홍대 상권에서 권리금 2억이라는 숫자가 찍힌 양도양수 계약서를 직접 본 적 있나? 2023년 상반기, 서교동 뒷골목의 한 유명 펍이 간판을 내리며 남긴 서류에는 '시설 권리금'이라는 명목으로 2억 원이 기재되어 있었다. 그런데 그 뒤에 숨겨진 실체는 처참했다. 3년 된]]></description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[정수기 필터 갈듯 파헤쳐 본 다크소울 초기 빌드의 망령들]]></title>
+      <link>https://desk.water-server.store/posts/guide-004-4bnk2k.html</link>
+      <guid isPermaLink="true">https://desk.water-server.store/posts/guide-004-4bnk2k.html</guid>
+      <description><![CDATA[불의 계승의 제사장 옆, 엉뚱한 자리에 놓여 있던 흑기사 한 마리를 기억하나? 2010년 도쿄 게임쇼 시연 버전(Build ID: 0.8.2)을 뜯어본 사람이라면 알 거다. 정식 발매판에선 그 자리에 있어야 할 망자가 사라지고, 대신 정교하게 배치된 흑기사가 플레이어를]]></description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[정수기 필터 갈 돈은 아끼면서 권리금 2억에 목숨 거는 놈들이 실패하는 이유]]></title>
+      <link>https://desk.water-server.store/posts/major_compare-001-1tmic9r.html</link>
+      <guid isPermaLink="true">https://desk.water-server.store/posts/major_compare-001-1tmic9r.html</guid>
+      <description><![CDATA[2023년 11월, 홍대입구역 9번 출구 뒷골목에서 7년 된 이자카야 하나가 자취를 감췄다. 권리금 2억 원을 챙겨 나간 사장은 승리자처럼 보였지만, 실거래 내역서를 뜯어본 사람이라면 웃음이 나올 거다. 권리금 2억이라는 허상은 사실 시설 감가상각을 전혀 고려하지 않은]]></description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[정수기 필터 갈 때 된 거 아니냐? 데커드 유니콘의 진짜 정체]]></title>
+      <link>https://desk.water-server.store/posts/myth-003-5kosir.html</link>
+      <guid isPermaLink="true">https://desk.water-server.store/posts/myth-003-5kosir.html</guid>
+      <description><![CDATA[세트장 구석, 1982년형 낡은 데스크 위에는 먼지 쌓인 알루미늄 조각과 싸구려 플라스틱 파편들이 굴러다녔다. 예산은 바닥났고, 조명 감독은 당장 내일 촬영할 유니콘 모형을 가져오라며 윽박질렀다. 결국 나는 촬영장 근처 잡화점에서 5달러짜리 조립식 완구를 집어 들었다.]]></description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[홍대 바닥에서 원가 계산기 두드리다 깨달은, 정수기 필터 갈 때와 가게 접을 때의 기묘한 공통점]]></title>
+      <link>https://desk.water-server.store/posts/qa-002-tnubjl.html</link>
+      <guid isPermaLink="true">https://desk.water-server.store/posts/qa-002-tnubjl.html</guid>
+      <description><![CDATA[인테리어가 힙해서, 인스타에서 핫해서 망했다는 소리는 다 게으른 자들의 핑계다. 2023년 홍대 서교동과 상수역 이면도로에서 조용히 간판을 내린 업장들을 보며 내가 엑셀 시트에 박아둔 데이터는 전혀 다른 진실을 가리키고 있다. 내가 단골이랍시고 드나들던 서교동의 한 자]]></description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>

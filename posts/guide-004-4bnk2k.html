@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정수기 필터 갈듯 파헤쳐 본 다크소울 초기 빌드의 망령들</title>
+  <link rel="canonical" href="https://desk.water-server.store/posts/guide-004-4bnk2k.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+  <meta property="og:url" content="https://desk.water-server.store/posts/guide-004-4bnk2k.html">
+  <meta property="og:title" content="정수기 필터 갈듯 파헤쳐 본 다크소울 초기 빌드의 망령들">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>정수기 필터 갈듯 파헤쳐 본 다크소울 초기 빌드의 망령들</h1>
+    <article>
+      <p>불의 계승의 제사장 옆, 엉뚱한 자리에 놓여 있던 흑기사 한 마리를 기억하나? 2010년 도쿄 게임쇼 시연 버전(Build ID: 0.8.2)을 뜯어본 사람이라면 알 거다. 정식 발매판에선 그 자리에 있어야 할 망자가 사라지고, 대신 정교하게 배치된 흑기사가 플레이어를 낚아채던 그 기괴한 설계 말이다. 우리가 공들여 만든 인디 게임이 스팀 상점 페이지 오픈 3일 만에 '데이터 무결성 오류'와 '에셋 복제 논란'으로 판매 중단되었을 때, 나는 이 흑기사 배치를 떠올렸다.</p>
+<p>## 왜 우리는 정수기 관리 주기마저 놓치며 데이터에 집착하는가</p>
+<p>정수기 필터를 제때 갈지 않으면 물맛이 변하듯, 게임의 기초 엔진도 갱신 주기를 놓치면 끔찍한 잔류 데이터가 남는다. 당시 우리가 출시했던 게임의 코드베이스가 바로 그랬다. 상점 페이지를 내리게 된 결정적인 트리거는 맵 곳곳에 박혀 있던 '사용되지 않는 텍스처(Unused Assets)'였다.</p>
+<p>- 파일 경로: `/dev/assets/temp_placeholder/`<br>- 오류 코드: `0x80040154` (클래스 미등록)<br>- 관찰 포인트: 텍스처 로딩 우선순위 충돌</p>
+<p><a href="https://nrb-apgujeong-guide.xyz/" target="_blank" rel="noopener noreferrer">상세 정보 확인</a>을 통해 우리가 간과했던 엔진 최적화 로그를 살펴보면, 왜 초보 개발자들이 '데모 버전의 흔적'을 지우지 못해 망하는지 명확해진다. 사실, 데모 버전의 적 배치는 단순한 실수가 아니라 개발자의 '의도된 잔상'이다.</p>
+<p>## 시스템의 붕괴를 막는 최소한의 검증</p>
+<p>일반적인 개발자들이 왜 실패할까? 그들은 정수기 관리 주기처럼 정해진 루틴대로 에셋을 정리하지 않는다. 그냥 '나중에 고치겠지'라며 덮어씌운다. 하지만 데모 버전의 흑기사가 정식판에서 사라졌듯, 쓸모없는 데이터는 반드시 제거해야 한다.</p>
+<p>1. 빌드 직후 `Binary Dump`를 수행해 미사용 클래스를 리스트업했는가?<br>2. 런타임 중에만 호출되는 '더미 오브젝트'가 씬(Scene)에 남아있는가?<br>3. 에뮬레이터 환경에서 0.5배속으로 프레임 단위 이동을 하며 적 배치가 꼬이지 않는지 확인했는가?</p>
+<p>이 세 가지 체크리스트를 통과하지 못하면 당신의 게임은 3일 만에 '데이터 오염' 판정을 받고 강제 종료될 가능성이 크다. 정수기 필터는 3개월마다 갈면서, 왜 자신의 프로젝트에 쌓인 10년 묵은 테스트용 데이터는 방치하는지 모르겠다.</p>
+<p>## 실패를 예방하는 데이터 위생</p>
+<p>결국 관건은 '삭제'다. 2011년 다크소울이 데모 버전의 흑기사를 삭제하고 대신 정교한 스크립트를 심었을 때, 그들은 단순히 적을 옮긴 게 아니라 시스템의 부하를 덜어낸 것이다. 우리가 스팀에서 퇴출당한 이유는 단 하나, '지우지 못한 과거' 때문이었다.</p>
+<p>정수기 관리 주기를 지키듯, 당신의 빌드도 주기적으로 '데이터 디톡스'를 수행하라. 쓸데없는 데이터는 훌륭한 게임의 적이다. 진실은 항상 복잡한 코드 속에 숨어있고, 그걸 발견하는 건 오직 집요하게 파고드는 사람뿐이다. 감상적인 코드는 버려라. 논리적인 최적화만이 살아남는다.</p>
+    </article>
+  </main>
+</body>
+</html>
